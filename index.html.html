@@ -1,0 +1,97 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Balanced: learn accounting step by step</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Newsreader:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#0b2559;--mut:#4a5b82;--blue:#1f4fd8;--red:#c8102e;--tint:#edf2fc;--line:#cbd6ee;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1430;--ink:#e8eefc;--mut:#9fb0d6;--blue:#7fa2ff;--red:#ff6b7f;--tint:#12214a;--line:#26396e;--on:#0a1430}}
+:root[data-theme=dark]{--bg:#0a1430;--ink:#e8eefc;--mut:#9fb0d6;--blue:#7fa2ff;--red:#ff6b7f;--tint:#12214a;--line:#26396e;--on:#0a1430}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+.wrap{display:grid;grid-template-columns:310px 1fr;min-height:100vh}
+nav{background:var(--tint);border-right:3px solid var(--blue);padding:20px 16px}
+main{padding:32px clamp(16px,5vw,64px) 64px;max-width:860px}
+@media(max-width:820px){.wrap{grid-template-columns:1fr}nav{border-right:0;border-bottom:3px solid var(--blue)}}
+h1,h2{font-family:Newsreader,Georgia,serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.1rem,5vw,3.2rem);font-weight:700}h2{font-size:clamp(1.7rem,4vw,2.3rem)}
+.brand{font:700 1.4rem Newsreader,Georgia,serif;background:none;border:0;color:var(--ink);padding:0 0 12px;cursor:pointer}
+summary{font-weight:700;cursor:pointer;padding:8px 0;font-size:.95rem}
+.ln{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;color:var(--ink);background:none;border:0;border-left:3px solid transparent;padding:6px 10px;cursor:pointer}
+.ln:hover{background:var(--bg)}.ln.on{border-left-color:var(--red);background:var(--bg);font-weight:600}
+.soon{color:var(--mut);font-size:.9rem;margin:8px 0}
+p,li{max-width:68ch}
+.eg{border-left:4px solid var(--red);background:var(--tint);padding:12px 16px;margin:18px 0;max-width:68ch}
+.b,.o{font:inherit;font-weight:600;border:2px solid var(--blue);background:var(--bg);color:var(--blue);padding:8px 14px;border-radius:4px;cursor:pointer}
+.b:hover{background:var(--blue);color:var(--on)}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.eq{border:2px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;margin:18px 0;font-variant-numeric:tabular-nums}
+.eq>div:first-child{border-right:2px solid var(--ink)}
+.eq h3{margin:0;padding:8px 12px;background:var(--tint);font-size:1rem}
+.r{display:flex;justify-content:space-between;gap:8px;padding:6px 12px;border-top:1px solid var(--line)}
+.r.t{border-top:2px solid var(--ink);font-weight:700}.neg{color:var(--red)}
+.acts{display:flex;flex-wrap:wrap;gap:8px}
+.st{font-weight:700;color:var(--blue);margin:8px 0}
+.q{border-top:2px solid var(--line);padding:16px 0;max-width:68ch}
+.o{display:block;width:100%;text-align:left;margin:6px 0;color:var(--ink);border-color:var(--line)}
+.o:hover:not(:disabled){border-color:var(--blue)}
+.o.ok{border-color:var(--blue);background:var(--tint)}.o.no{border-color:var(--red)}
+input{font:inherit;padding:8px;width:11em;border:2px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);margin-right:8px}
+.fb{font-weight:600;margin:8px 0 0}.fb.g{color:var(--blue)}.fb.w{color:var(--red)}
+.pn{display:flex;justify-content:space-between;gap:8px;margin-top:28px;border-top:2px solid var(--blue);padding-top:16px}
+.fine{color:var(--mut);font-size:.85rem;margin-top:40px}
+@media(prefers-reduced-motion:no-preference){.eq .r span:last-child{transition:color .3s}}
+</style></head><body><div class="wrap"><nav aria-label="Course"><button class="brand" data-h="1">Balanced</button><div id="nav"></div></nav><main id="m"></main></div>
+<script>
+const U=[
+{n:1,t:"Accounting and the Business Environment",L:[
+{t:"What accounting does",b:`<p><b>Accounting</b> is the system a business uses to measure what happened, turn it into reports, and give those reports to the people who make decisions.</p><p><b>Financial accounting</b> serves outsiders: investors, lenders (creditors), and tax authorities. <b>Managerial accounting</b> serves insiders, such as managers who budget and plan.</p><div class="eg">Quick test: ask who is asking. "Can this business repay my loan?" comes from outside. "Should we open a second location?" comes from inside.</div><p>Careers include CPA (licensed to serve the public), CMA (often works inside one company), CFP (helps individuals plan their money), and roles such as controller, auditor, and tax accountant.</p>`,q:[
+{q:"A bank is deciding whether to lend money to a company. Which accounting information does it rely on?",o:["Financial accounting","Managerial accounting","Neither"],a:0,w:"The bank is outside the company, so it uses financial accounting reports."},
+{q:"Which question belongs to managerial accounting?",o:["Should I invest in this business?","How do our actual costs compare with budget?","How much tax does the business owe?"],a:1,w:"Comparing actual with budgeted costs is an internal decision."}]},
+{t:"Rules and business types",b:`<p><b>GAAP</b> (Generally Accepted Accounting Principles) are the guidelines U.S. companies follow. The <b>FASB</b> sets the standards and the <b>SEC</b> oversees U.S. financial markets. <b>IFRS</b>, published by the <b>IASB</b>, is the global set used in more than 166 jurisdictions.</p><p>Useful information must be relevant to decisions and a faithful picture: complete, neutral, and free from error.</p><p>Three ground rules: the <b>cost principle</b> (record assets at what you paid), the <b>going concern</b> assumption (the business will keep operating), and the <b>monetary unit</b> assumption (measure everything in money).</p><ul><li><b>Sole proprietorship:</b> one owner, personally liable.</li><li><b>Partnership:</b> two or more owners, personally liable.</li><li><b>Corporation:</b> a separate legal entity; stockholders are not personally liable; it pays its own tax.</li><li><b>LLC:</b> members are not personally liable; members pay tax on their share.</li></ul>`,q:[
+{q:"A company buys land for $20,000. It could sell today for $35,000. What does the balance sheet show under the cost principle?",o:["$35,000","$20,000","$55,000"],a:1,w:"Assets stay at historical cost, not market value."},
+{q:"Which business type pays its own income tax and protects owners from personal liability?",o:["Sole proprietorship","Partnership","Corporation"],a:2,w:"A corporation is a separate legal entity."}]},
+{t:"The accounting equation",b:`<p>Every business follows one equation, always in balance:</p><p><b>Assets = Liabilities + Equity</b></p><p>An <b>asset</b> is a resource expected to help the business in the future (cash, inventory, furniture, land). A <b>liability</b> is a debt owed to creditors; many have "payable" in the name. <b>Equity</b> is the owners' claim: common stock plus retained earnings.</p><p>Retained earnings grow with revenues and shrink with expenses and dividends. When revenues beat expenses the result is net income; the reverse is a net loss.</p><div class="eg">Think of it as two answers to one question. Everything the business owns (assets) was paid for either by borrowing (liabilities) or by the owners (equity). Try the live equation on the home page.</div>`,q:[
+{q:"Assets are $230,000 and liabilities are $120,000. What is equity, in dollars?",n:110000,w:"Equity = 230,000 − 120,000 = 110,000."},
+{q:"Which account is a liability?",o:["Accounts Receivable","Salaries Payable","Supplies"],a:1,w:"Salaries Payable is money owed to employees. The others are assets."},
+{q:"Which event lowers retained earnings?",o:["Earning service revenue","Paying a dividend","Issuing common stock"],a:1,w:"Dividends and expenses reduce retained earnings. Revenue raises it, and stock is contributed capital."}]},
+{t:"Analyzing transactions",b:`<p>A <b>transaction</b> is any event that changes the financial position of the business and can be measured reliably. Analyze each one in three steps:</p><ol><li>Identify the accounts and their types.</li><li>Decide whether each account increases or decreases.</li><li>Check that the equation still balances.</li></ol><div class="eg">Sheena Bright puts $30,000 cash into her new corporation for stock. Cash (asset) +30,000. Common Stock (equity) +30,000. Both sides rise by the same amount. She then pays $20,000 cash for land: Cash −20,000, Land +20,000. One asset swaps for another.</div><p>"On account" means a promise to pay or be paid later. Buying on account creates a payable. Performing a service on account creates a receivable.</p>`,q:[
+{q:"The business buys $500 of supplies on account. What changes?",o:["Assets +$500, liabilities +$500","Assets +$500, equity +$500","Assets −$500, liabilities −$500"],a:0,w:"Supplies (asset) and Accounts Payable (liability) both rise by $500."},
+{q:"A client pays $2,000 it already owed. How is it recorded?",o:["Cash up, Service Revenue up","Cash up, Accounts Receivable down","Accounts Receivable up, Service Revenue up"],a:1,w:"The revenue was earned when the work was done. Collecting swaps one asset for another."}]},
+{t:"Financial statements and ROA",b:`<p>Statements are built in an order, because each feeds the next:</p><ol><li><b>Income statement:</b> revenues − expenses = net income or net loss for a period.</li><li><b>Statement of retained earnings:</b> beginning balance + net income − dividends = ending balance.</li><li><b>Balance sheet:</b> assets, liabilities, and equity on one date.</li></ol><p>The <b>statement of cash flows</b> reports cash in and out for a period, split into operating, investing, and financing.</p><div class="eg">Smart Touch Learning: revenue $8,500 − expenses $3,200 = net income $5,300. Retained earnings: 0 + 5,300 − 5,000 dividends = $300.</div><p><b>Return on assets (ROA)</b> = net income ÷ average total assets, where average assets = (beginning + ending) ÷ 2. It shows how profitably a company uses what it owns.</p>`,q:[
+{q:"Beginning retained earnings $0, net income $5,300, dividends $5,000. What is ending retained earnings?",n:300,w:"0 + 5,300 − 5,000 = 300."},
+{q:"Net income is $9,578 and average total assets are $99,981 (millions). What is ROA, as a percent to one decimal?",n:9.6,e:.05,w:"9,578 ÷ 99,981 ≈ 0.096, or 9.6%."}]}]},
+{n:2,t:"Recording Business Transactions"},{n:3,t:"The Adjusting Process"},
+{n:4,t:"Completing the Accounting Cycle",L:[
+{t:"The classified balance sheet",b:`<p>A <b>classified balance sheet</b> sorts each asset and liability into a category so readers can judge short-term strength at a glance. Assets appear in order of <b>liquidity</b>, meaning how quickly they turn into cash.</p><ul><li><b>Current assets</b> will be converted to cash, sold, or used up within 12 months (or the operating cycle, if longer): cash, receivables, supplies, prepaid rent.</li><li><b>Long-term assets</b> last longer: long-term investments, property, plant, and equipment, and intangible assets.</li><li><b>Current liabilities</b> are due within a year: accounts payable, salaries payable, unearned revenue.</li><li><b>Long-term liabilities</b> are due later, such as a multi-year note payable.</li></ul><p>All three statements come from the adjusted trial balance: net income flows to retained earnings, and ending retained earnings flows to the balance sheet.</p>`,q:[
+{q:"Prepaid Rent will be used up within the year. How is it classified?",o:["Current asset","Long-term asset","Current liability"],a:0,w:"It will be used within 12 months, so it is a current asset."},
+{q:"A $60,000 note payable is due in five years. Where does it go?",o:["Current liabilities","Long-term liabilities","Stockholders' equity"],a:1,w:"It is not due within a year, so it is long-term."}]},
+{t:"Closing the books",b:`<p>Closing resets revenue and expense accounts to zero so each period's net income is measured on its own. <b>Temporary accounts</b> are closed: revenues, expenses, dividends, and Income Summary. <b>Permanent accounts</b> carry forward: assets, liabilities, common stock, and retained earnings.</p><p>Four closing entries, in order:</p><ol><li>Close revenues to Income Summary (debit revenue, credit Income Summary).</li><li>Close expenses to Income Summary (debit Income Summary, credit each expense).</li><li>Close Income Summary to Retained Earnings.</li><li>Close Dividends to Retained Earnings (debit Retained Earnings, credit Dividends).</li></ol><div class="eg">Revenue $17,500 and expenses $8,950 leave a $8,550 credit in Income Summary. That moves to Retained Earnings. Dividends of $5,000 then reduce it, so Retained Earnings ends at $3,550. With a net loss, step 3 flips: debit Retained Earnings, credit Income Summary.</div>`,q:[
+{q:"Which account is NOT closed at the end of the period?",o:["Dividends","Service Revenue","Retained Earnings"],a:2,w:"Retained Earnings is permanent. It receives the closing entries."},
+{q:"Revenues are $17,500 and expenses are $8,950. What credit balance sits in Income Summary before it is closed, in dollars?",n:8550,w:"17,500 − 8,950 = 8,550."},
+{q:"Retained earnings start at $0. Net income is $8,550 and dividends are $5,000. What is the ending balance, in dollars?",n:3550,w:"0 + 8,550 − 5,000 = 3,550."}]},
+{t:"The accounting cycle and the current ratio",b:`<p>The <b>accounting cycle</b> is the routine that produces a period's financial statements:</p><ol><li>Start with beginning account balances.</li><li>Journalize transactions.</li><li>Post to the ledger.</li><li>Prepare the unadjusted trial balance.</li><li>Journalize and post adjusting entries.</li><li>Prepare the adjusted trial balance.</li><li>Prepare the financial statements.</li><li>Journalize and post closing entries.</li><li>Prepare the post-closing trial balance.</li></ol><p>The <b>post-closing trial balance</b> lists only permanent accounts. Debits must still equal credits.</p><p>The <b>current ratio</b> = total current assets ÷ total current liabilities. It shows whether a company can pay its near-term debts. Higher is better, and a rising ratio means improvement.</p><div class="eg">Smart Touch Learning: current assets $16,100 and current liabilities $2,000 give a current ratio of 8.05.</div>`,q:[
+{q:"Which accounts appear on a post-closing trial balance?",o:["Only permanent accounts","Only revenue and expense accounts","All accounts"],a:0,w:"Temporary accounts were closed to zero, so only permanent accounts remain."},
+{q:"Current assets are $16,100 and current liabilities are $2,000. What is the current ratio, to two decimals?",n:8.05,e:.005,w:"16,100 ÷ 2,000 = 8.05."}]}]},
+{n:5,t:"Merchandising Operations"},{n:6,t:"Merchandise Inventory"},{n:7,t:"Internal Control and Cash"},{n:8,t:"Receivables"},{n:9,t:"Plant Assets, Natural Resources, and Intangibles"},{n:11,t:"Current Liabilities and Payroll"},{n:12,t:"Long-term Liabilities"},{n:13,t:"Stockholders\u2019 Equity"},{n:15,t:"Financial Statement Analysis"}];
+const $=s=>document.querySelector(s),f=n=>(n<0?"-":"")+"$"+Math.abs(n).toLocaleString("en-US");
+const flat=[];U.forEach((u,i)=>(u.L||[]).forEach((l,j)=>flat.push([i,j])));let cur=null,S;
+$("#nav").innerHTML=U.map((u,i)=>u.L?`<details open><summary>Chapter ${u.n}: ${u.t}</summary>${u.L.map((l,j)=>`<button class="ln" data-u="${i}" data-l="${j}">${u.n}.${j+1} ${l.t}</button>`).join("")}</details>`:`<p class="soon">Chapter ${u.n}: ${u.t}<br><small>Lessons are next on the list</small></p>`).join("");
+const A=[["Owner invests $30,000",s=>{s.cash+=30000;s.stock+=30000}],["Buy land for $20,000 cash",s=>{s.cash-=20000;s.land+=20000}],["Buy supplies for $500 on account",s=>{s.sup+=500;s.ap+=500}],["Earn $5,500 cash from clients",s=>{s.cash+=5500;s.re+=5500}]];
+function eq(){const a=S.cash+S.land+S.sup,r=S.ap+S.stock+S.re,R=(l,v)=>`<div class="r"><span>${l}</span><span class="${v<0?"neg":""}">${f(v)}</span></div>`;
+$("#eq").innerHTML=`<div><h3>Assets</h3>${R("Cash",S.cash)}${R("Land",S.land)}${R("Supplies",S.sup)}<div class="r t"><span>Total</span><span>${f(a)}</span></div></div><div><h3>Liabilities + Equity</h3>${R("Accounts Payable",S.ap)}${R("Common Stock",S.stock)}${R("Retained Earnings",S.re)}<div class="r t"><span>Total</span><span>${f(r)}</span></div></div>`;
+$("#st").textContent=a===r?"Balanced: both sides equal "+f(a):"Out of balance"}
+function home(){cur=null;document.querySelectorAll(".ln").forEach(x=>x.classList.remove("on"));S={cash:0,land:0,sup:0,ap:0,stock:0,re:0};
+$("#m").innerHTML=`<h1>Accounting basics, built around one equation</h1><p>Short lessons, worked examples, and practice questions that check your answer right away. Start with the equation below: press the transactions in any order and watch both sides move together.</p><div class="acts">${A.map((x,i)=>`<button class="b" data-a="${i}">${x[0]}</button>`).join("")}<button class="b" data-h="1">Reset</button></div><div class="eq" id="eq"></div><p class="st" id="st" aria-live="polite"></p><p>Chapters 1 and 4 are ready. The other chapters appear in the course list as they are built.</p><button class="b" data-u="0" data-l="0">Start lesson 1.1</button>`;eq();scrollTo(0,0)}
+function qh(q,k){return q.o?`<div class="q" data-k="${k}"><p><b>${q.q}</b></p>${q.o.map((o,x)=>`<button class="o" data-x="${x}">${o}</button>`).join("")}<p class="fb" aria-live="polite"></p></div>`:`<div class="q" data-k="${k}"><p><b>${q.q}</b></p><input type="number" step="any" inputmode="decimal" aria-label="Your answer"><button class="b" data-c="1">Check answer</button><p class="fb" aria-live="polite"></p></div>`}
+function go(i,j){cur=[i,j];const u=U[i],l=u.L[j],p=flat.findIndex(x=>x[0]===i&&x[1]===j);
+$("#m").innerHTML=`<h2>${u.n}.${j+1} ${l.t}</h2>${l.b}<h2 style="font-size:1.4rem;margin-top:1.4em">Practice</h2>${l.q.map(qh).join("")}<div class="pn"><button class="b" data-p="${p-1}" ${p?"":"disabled"}>Previous lesson</button><button class="b" data-p="${p+1}" ${p<flat.length-1?"":"disabled"}>Next lesson</button></div><p class="fine">Original explanations written for study, following the topics of Financial and Managerial Accounting: The Financial Chapters, 9th ed. Not for redistribution.</p>`;
+document.querySelectorAll(".ln").forEach(x=>x.classList.toggle("on",+x.dataset.u===i&&+x.dataset.l===j));scrollTo(0,0)}
+const fin=(d,ok,w)=>{d.querySelector(".fb").className="fb "+(ok?"g":"w");d.querySelector(".fb").textContent=(ok?"Correct. ":"Not quite. ")+w};
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;const D=t.dataset;
+if(D.h)return home();if(D.a){A[D.a][1](S);return eq()}
+if(D.u!==undefined)return go(+D.u,+D.l);
+if(D.p!==undefined){const x=flat[+D.p];return go(x[0],x[1])}
+const d=t.closest(".q");if(!d||!cur)return;const q=U[cur[0]].L[cur[1]].q[+d.dataset.k];
+if(D.x!==undefined){const x=+D.x;d.querySelectorAll(".o").forEach((b,y)=>{b.disabled=true;if(y===q.a)b.classList.add("ok")});if(x!==q.a)t.classList.add("no");fin(d,x===q.a,q.w)}
+if(D.c){const v=parseFloat(d.querySelector("input").value);if(isNaN(v)){const b=d.querySelector(".fb");b.className="fb w";b.textContent="Enter a number, then select Check answer.";return}fin(d,Math.abs(v-q.n)<=(q.e||.01),q.w)}});
+home();
+</script></body></html>
